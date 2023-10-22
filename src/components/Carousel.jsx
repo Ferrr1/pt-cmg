@@ -1,6 +1,5 @@
 import "./CarouselStyles.css";
 import React, { useState } from "react";
-import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 
 const Carousel = ({ data, Buttondata }) => {
   const [slide, setSlide] = useState(0);
@@ -15,7 +14,9 @@ const Carousel = ({ data, Buttondata }) => {
 
   return (
     <div className="carousel">
-      <BsArrowLeftCircleFill onClick={prevSlide} className="arrow arrow-left" />
+      <div className="arrow arrow-left">
+        <i onClick={prevSlide} class="fa-solid fa-circle-arrow-left"></i>
+      </div>
       {data.map((item, idx) => (
         <div
           key={idx}
@@ -47,10 +48,9 @@ const Carousel = ({ data, Buttondata }) => {
           </div>
         </div>
       ))}
-      <BsArrowRightCircleFill
-        onClick={nextSlide}
-        className="arrow arrow-right"
-      />
+      <div className="arrow arrow-right">
+        <i onClick={nextSlide} class="fa-solid fa-circle-arrow-right"></i>
+      </div>
       <span className="indicators">
         {data.map((_, idx) => (
           <button

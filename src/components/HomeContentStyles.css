@@ -37,7 +37,7 @@
 .content-left img {
   margin-top: 30px;
   width: 50%;
-  height: 500px;
+  height: 600px;
   object-fit: cover;
 }
 
@@ -53,7 +53,6 @@
 .content-right img {
   margin-top: 30px;
   width: 100%;
-  height: 500px;
   object-fit: cover;
 }
 
@@ -61,7 +60,7 @@
   position: absolute;
   background-color: rgba(0, 0, 0, 0.96);
   width: 100%;
-  height: 500px;
+  height: 600px;
   top: 30px;
   left: 0;
   opacity: 0.9;
@@ -69,6 +68,165 @@
 
 .content-item {
   position: relative;
-  color: #000000;
-  padding: 30px 60px;
+  padding: 80px 60px;
+}
+
+.content-item ul {
+  list-style: none;
+}
+
+.content-item li {
+  width: 100%;
+}
+
+.content-text {
+  display: table-cell;
+  text-align: left;
+}
+
+.content-text h3 {
+  color: white;
+  font-size: 1.5rem;
+  color: orange;
+  margin-bottom: 10px;
+}
+
+.content-text p {
+  color: rgb(215, 215, 215);
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.content-icon {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.content-icon .icon {
+  margin-right: 35px;
+  font-size: 2rem;
+  padding: 5px;
+  width: 50px;
+  height: 50px;
+  color: rgb(255, 255, 255);
+  border: solid 2.2px orange;
+}
+
+@media screen and (max-width: 1366px) {
+  .bg-content {
+    height: 800px;
+  }
+
+  .content-left img {
+    height: 800px;
+  }
+  .content-right img {
+    height: 800px;
+  }
+  @media screen and (max-width: 1000px) {
+    .bg-content {
+      height: 600px;
+    }
+
+    .content-left img {
+      height: 600px;
+    }
+    .content-right img {
+      height: 600px;
+    }
+    .content-left > img {
+      display: none;
+    }
+    .content-right {
+      position: relative;
+      width: 100%;
+      float: none;
+      right: auto;
+      margin-top: 20px; /* Atur margin top sesuai kebutuhan */
+    }
+
+    .content-right {
+      background-position: 50% 50%;
+    }
+
+    .content-item {
+      padding: 30px 30px;
+    }
+    .content-text > h3 {
+      font-size: 1.3rem;
+    }
+    .content-text > p {
+      font-size: 0.8rem;
+    }
+    .title-content::before {
+      width: 100%;
+      margin-top: 10px;
+      left: -0%;
+    }
+    @media screen and (max-width: 850px) {
+      .content-left > img {
+        display: none;
+      }
+      .content-right {
+        position: relative;
+        width: 100%;
+        float: none;
+        right: auto;
+        margin-top: 20px; /* Atur margin top sesuai kebutuhan */
+      }
+
+      .content-right {
+        background-position: 50% 50%;
+      }
+
+      .content-item {
+        padding: 50px 30px;
+      }
+      .content-text > h3 {
+        font-size: 1.3rem;
+      }
+      .content-text > p {
+        font-size: 0.8rem;
+      }
+      .title-content::before {
+        width: 100%;
+        margin-top: 10px;
+        left: -0%;
+      }
+      @media screen and (max-width: 450px) {
+        .content-left > img {
+          display: none;
+        }
+        .content-right {
+          position: relative;
+          width: 100%;
+          float: none;
+          right: auto;
+          margin-top: 20px; /* Atur margin top sesuai kebutuhan */
+        }
+
+        .content-right {
+          background-position: 50% 50%;
+        }
+
+        .content-item {
+          padding: 20px 30px;
+        }
+        .content-text > h3 {
+          font-size: 1.1rem;
+        }
+        .content-text > p {
+          font-size: 0.7rem;
+        }
+        .title-content h1 {
+          font-size: 2rem;
+        }
+        .title-content::before {
+          width: 100%;
+          margin-top: 20%;
+          left: -0%;
+        }
+      }
+    }
+  }
 }

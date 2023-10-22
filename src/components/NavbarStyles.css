@@ -1,0 +1,192 @@
+.NavbarItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  padding: 0 20px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+  width: 95%;
+  height: 70px;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  -o-transform: translate(-50%);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: rgb(0, 0, 114);
+  justify-self: start;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.imageCompany {
+  width: 60px;
+  height: 65px;
+  margin-left: 5px;
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-gap: 10px;
+  list-style: none;
+  align-items: center;
+  text-align: center;
+  justify-content: end;
+}
+
+.nav-links {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  padding: 0.7rem 1rem;
+  white-space: nowrap;
+}
+
+.nav-links i {
+  padding-right: 10px;
+}
+
+.nav-links:hover {
+  background-color: rgba(31, 38, 135, 0.905);
+  color: white;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+
+.fa-bars,
+.fa-times {
+  color: rgb(0, 0, 0);
+}
+
+.menu-icons {
+  display: none;
+}
+
+.nav-links-mobile {
+  padding: 0.7rem 1.2rem;
+  white-space: nowrap;
+  background-color: #fafafa;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #222;
+  font-weight: 500;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.nav-links-mobile:hover {
+  background-color: #dadada;
+}
+
+@media screen and (max-width: 1000px) {
+  .logo h4 {
+    display: none;
+  }
+
+  @media screen and (max-width: 830px) {
+    .NavbarItems {
+      z-index: 99;
+    }
+
+    .nav-menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      background-color: rgba(255, 255, 255, 0.771);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(4px);
+      border-radius: 13px;
+      width: 100%;
+      height: auto;
+      position: absolute;
+      top: 0;
+      left: 110%;
+      align-items: stretch;
+      padding: 80px 0 30px 0;
+      margin: 0;
+      z-index: -1;
+      transition: all 0.4s ease-in-out;
+      -webkit-border-radius: 13px;
+      -moz-border-radius: 13px;
+      -ms-border-radius: 13px;
+      -o-border-radius: 13px;
+      -webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      -ms-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+    }
+
+    .nav-menu.active {
+      left: 0%;
+    }
+
+    .nav-links {
+      display: block;
+      widows: 100%;
+      padding: 1.3rem 0;
+      color: #222;
+      transition: background 0.1s ease-in-out;
+      -webkit-transition: background 0.1s ease-in-out;
+      -moz-transition: background 0.1s ease-in-out;
+      -ms-transition: background 0.1s ease-in-out;
+      -o-transition: background 0.1s ease-in-out;
+    }
+
+    .nav-links:hover {
+      background: rgba(255, 255, 255, 0.316);
+      /* backdrop-filter: blur(20px); */
+    }
+
+    .menu-icons {
+      display: block;
+    }
+
+    .nav-links-mobile {
+      padding: 1.5rem;
+      display: block;
+      text-align: center;
+      font-size: 1.3rem;
+      font-weight: bold;
+      width: 80%;
+      margin: auto;
+    }
+    @media screen and (max-width: 400px) {
+      .NavbarItems {
+        height: 50px;
+      }
+      .imageCompany {
+        width: 45px;
+        height: 45px;
+      }
+      .nav-links {
+        padding: 0.8rem 0;
+      }
+    }
+  }
+}

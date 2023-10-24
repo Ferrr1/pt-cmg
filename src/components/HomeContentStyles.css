@@ -1,4 +1,5 @@
 .content {
+  overflow: hidden;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -9,6 +10,7 @@
 }
 .title-content p {
   padding: 0.6rem 0 0 0;
+  font-family: "Roboto", sans-serif;
 }
 .title-content::before {
   position: absolute;
@@ -95,6 +97,7 @@
   color: rgb(215, 215, 215);
   font-size: 0.9rem;
   margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
 }
 
 .content-icon {
@@ -158,11 +161,6 @@
     .content-text > p {
       font-size: 0.8rem;
     }
-    .title-content::before {
-      width: 100%;
-      margin-top: 10px;
-      left: -0%;
-    }
     @media screen and (max-width: 850px) {
       .content-left > img {
         display: none;
@@ -188,11 +186,6 @@
       .content-text > p {
         font-size: 0.8rem;
       }
-      .title-content::before {
-        width: 100%;
-        margin-top: 10px;
-        left: -0%;
-      }
       @media screen and (max-width: 450px) {
         .content-left > img {
           display: none;
@@ -216,15 +209,24 @@
           font-size: 1.1rem;
         }
         .content-text > p {
-          font-size: 0.7rem;
+          font-size: 0.6rem;
         }
         .title-content h1 {
-          font-size: 2rem;
+          font-size: 1.6rem;
         }
-        .title-content::before {
-          width: 100%;
-          margin-top: 20%;
-          left: -0%;
+        .title-content > p {
+          font-size: 0.7rem;
+        }
+        @media screen and (max-width: 350px) {
+          .content-text > h3 {
+            font-size: 0.8rem;
+          }
+          .title-content > h1 {
+            font-size: 1.2rem;
+          }
+          .title-content > p {
+            font-size: 0.6rem;
+          }
         }
       }
     }

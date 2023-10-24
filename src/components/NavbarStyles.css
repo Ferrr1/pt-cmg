@@ -28,7 +28,7 @@
   display: flex;
   align-items: center;
   font-size: 1rem;
-  color: rgb(0, 0, 114);
+  color: #2f3686;
   justify-self: start;
   cursor: pointer;
   white-space: nowrap;
@@ -62,7 +62,7 @@
 }
 
 .nav-links:hover {
-  background-color: rgba(31, 38, 135, 0.905);
+  background-color: #2f3686;
   color: white;
   border-radius: 4px;
   transition: all 0.2s ease-in-out;
@@ -119,7 +119,7 @@
       flex-direction: column;
       justify-content: flex-start;
       background-color: rgba(255, 255, 255, 0.771);
-      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      box-shadow: 0 8px 32px 0 #2f3686;
       backdrop-filter: blur(4px);
       border-radius: 13px;
       width: 100%;

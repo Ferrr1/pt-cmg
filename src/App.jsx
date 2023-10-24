@@ -6,6 +6,7 @@ import { items } from "./Data/CarouselData";
 import { buttonItems } from "./components/ButtonCarouselData";
 import "./style.css";
 import Bussiness from "./components/Bussiness";
+import FooterContact from "./components/FooterContact";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Carousel data={items} Buttondata={buttonItems} />
         <HomeContent />
         <Bussiness />
+        <FooterContact />
       </div>
     </>
   );
